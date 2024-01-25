@@ -1,0 +1,116 @@
+/* results.css */
+
+/* Center the content horizontally */
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Style the chart for larger screens */
+  .chart {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the results info */
+  .results-info {
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  /* Media query for smaller screens (mobile) */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .chart {
+      width: 90%; /* Adjust the width for mobile devices */
+      font-size: 14px; /* Adjust font size for readability */
+    }
+  
+    .results-info {
+      width: 90%;
+      font-size: 14px;
+    }
+  }
+  .results-container {
+    text-align: center;
+    margin-top: 10%; /* Add top margin for padding */
+  }
+    
+  .centered-content {
+    text-align: center; /* Center-align the content within this container */
+  }
+  
+  .results-title {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .results-description {
+    font-size: 18px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+  }
+
+  .results-container {
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the max width as needed */
+    padding: 20px;
+  }
+  
+  .centered-content {
+    text-align: center;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .leader-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .info-display {
+    margin-top: 20px;
+    text-align: center;
+    /* Add any additional styling as needed */
+  }
+  
+  
+  /* Adjust the size and position of the chart within its container */
+  .chart-container {
+    position: relative; /* Set the position of the chart container to relative */
+    overflow: hidden; /* Hide any overflow beyond the container */
+  }
+  
+  /* Ensure the chart takes the full size of its container */
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+  
+/* Clip the background image to the chart area */
+
+  #myChart {
+    position: relative;
+  }
+  
+  #myChart::before {
+    content: "";
+    position: absolute;
+    top: 60px; /* Adjust the top position to match your chart's padding */
+    left: 60px; /* Adjust the left position to match your chart's padding */
+    width: calc(100% - 120px); /* Adjust the width to account for the left and right padding */
+    height: calc(100% - 120px); /* Adjust the height to account for the top and bottom padding */
+    background-image: url('./chartbackground.jpg'); /* Replace with the path to your background image */
+    background-size: cover; /* Cover the clipped area with the background image */
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
